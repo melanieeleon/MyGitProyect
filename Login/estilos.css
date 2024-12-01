@@ -1,0 +1,506 @@
+/************************************/
+/**ESTILOS LOGIN*/
+/************************************/
+/**NAV BAR**/
+
+html {
+  scroll-behavior:smooth; /*para que el desplazamiento al contenido sea despacio*/
+}
+*{
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family:"Inconsolata", monospace ;
+}
+  
+nav {
+    font-family:"Inconsolata", monospace ;
+    padding: 5px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    z-index: 1;
+  }
+nav .logo {
+    display: flex;
+    align-items: center;
+  }
+nav .logo img {
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
+  }
+nav .logo h1 {
+    font-family:"Inconsolata", monospace;
+    font-size: 25px; /*1.1rem*/
+    background-color: white;
+    /*background: linear-gradient(to right, #221927 0%, #81899e 100%);*/
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  nav ul {
+    font-family:"Inconsolata", monospace; ;
+    list-style: none;
+    display: flex;
+  }
+  nav ul li {
+    margin-left: 1.5rem;
+  }
+  nav ul li a {
+    
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 95%;
+    font-weight: 400;
+    padding: 4px 8px;
+    border-radius: 5px;
+  }
+  
+  nav ul li a:hover {
+    /*#f5f5f5*/
+    color: black;
+  }
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .hamburger .line {
+    width: 25px;
+    height: 1px;
+    background-color: #1f1f1f;
+    display: block;
+    margin: 7px auto;
+    transition: all 0.3s ease-in-out;
+  }
+  .hamburger-active {
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.6s;
+    transform: rotate(45deg);
+  }
+  
+  .hamburger-active .line:nth-child(2) {
+    width: 0px;
+  }
+  
+  .hamburger-active .line:nth-child(1),
+  .hamburger-active .line:nth-child(3) {
+    transition-delay: 0.3s;
+  }
+  
+  .hamburger-active .line:nth-child(1) {
+    transform: translateY(12px);
+  }
+  
+  .hamburger-active .line:nth-child(3) {
+    transform: translateY(-5px) rotate(90deg);
+  }
+  
+  .menubar {
+    position: absolute;
+    top: 0;
+    left: -60%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 60%;
+    height: 100vh;
+    padding: 20% 0;
+    background: rgba(255, 255, 255);
+    transition: all 0.5s ease-in;
+    z-index: 2;
+  }
+  .active {
+    left: 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  
+  .menubar ul {
+    padding: 0;
+    list-style: none;
+  }
+  .menubar ul li {
+    margin-bottom: 32px;
+  }
+  
+  .menubar ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 95%;
+    font-weight: 400;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .menubar ul li a:hover {
+    background-color: #f5f5f5;
+  }
+  @media screen and (max-width: 790px) {
+    .hamburger {
+      display: block;
+    }
+    nav ul {
+      display: none;
+    }
+  }
+
+/****************/
+/****************/
+
+body{
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight:700;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    margin: 0;
+    background-color: rgb(129, 120, 153);  
+    /*background: linear-gradient(80deg white,rgb(139, 82, 139), pink);
+    /*background: radial-gradient(center center, circle, black, rgb(129, 120, 153));*/
+    color: #f5f5f5;
+}
+
+#contenedor-principal{
+   display: flex;
+   align-items: center; 
+   justify-content: center;
+   margin: 0;
+   padding: 0;
+   width: 100;
+   height: 100;
+   padding-top: 20px;
+   min-width: 100;
+   min-height: 100;
+}
+            /**HOME**/
+#home-conteiner{
+    display: flex; /* Activa Flexbox */
+    flex-direction: column; /* Organiza los elementos en columna */
+    align-items: center; /* Centra horizontalmente el h1 */
+    margin: 20px auto; /* Centra el contenedor horizontalmente en la página */
+    padding: 20px;   
+}
+
+#home-container h1{
+    text-align: center; /* Centra el texto del h1 */
+    margin-bottom: 40px; /* Espaciado hacia abajo */
+    font-size: 70px;
+    color: #000;
+}
+    
+#home-container .content {
+    display: flex; /* Activa Flexbox */
+    justify-content: space-between; /* Espaciado entre el texto y la imagen */
+    align-items: flex-start; /* Alinea los elementos verticalmente al inicio */
+    width: 80%; /* Ajusta el ancho del contenedor */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+/**Sección izquierda: h4, ul, p */
+#home-container .text {
+    flex: 2; /* Hace que ocupe más espacio que la imagen */
+    text-align: center; /* Alinea el texto a la izquierda left */
+    margin-right: 20px; /* Espaciado entre texto e imagen */
+    font-size: 20px;
+}
+#home-container p{
+    font-size: 25px;
+    text-align: left;/*agregado*/
+    padding-top: 20px;
+    padding-bottom: 40px;
+    color: #FFF;
+}
+#home-container h4{
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;/*agregado*/
+    color: #fff
+}
+/* Lista */
+#home-container ul {
+    list-style-type: disc; /* Marcadores predeterminados */
+    text-align: left;/*agregado*/
+    /*padding-left: 20px; /* Espaciado interno a la izquierda */
+    margin: 10px 0;
+    font-size: 25px;
+    color: #fff;
+}
+
+/* Imagen */
+#home-container #img-container {
+    /*flex: 1;  Ocupa menos espacio que el texto */
+    text-align: center; /* Alinea la imagen a la derecha right */
+}
+
+#home-container #img-container img {
+    width: 400px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene las proporciones */
+}
+
+/*******************************/
+  /**WHO IS SNOOPY STYLE **/
+
+#snoopy-container{
+    display: flex; /* Activa Flexbox */
+    flex-direction: column; /* Organiza los elementos en columna */
+    align-items: center; /* Centra horizontalmente el h1 */
+    margin: 20px auto; /* Centra el contenedor horizontalmente en la página */
+    padding: 20px;   
+}
+#snoopy-container h2{
+  text-align: center; /* Centra el texto del h1 */
+  margin-bottom: 40px; /* Espaciado hacia abajo */
+  font-size: 70px;
+  color: #000;
+}
+#snoopy-container .snoopy-content{
+  flex: 2; /* Hace que ocupe más espacio que la imagen */
+  text-align: center; /* Alinea el texto al centro */
+  margin-right: 40px; /* Espaciado entre texto e imagen */
+  font-size: 25px;
+}
+
+/****************************************/
+
+/*LOGIN*/
+#contenedor-centrado{
+    align-items: center;
+    margin-top: 70px; /*agregado por mi */
+    max-width: 320px;
+    width: 100%;
+    margin-top: 5px;
+}
+#contenedor-centrado p{
+  align-content: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+#contenedor-centrado img{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 25px;
+}
+.titulo{
+    font-family: "Courgette", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+    color:rgb(129, 120, 153); ;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#login{
+    width: 100%;
+    padding: 50px 30px;
+    background-color: whitesmoke;
+
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.15);
+    
+    border-radius: 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    
+    box-sizing: border-box;
+}
+#login input{
+    font-family: "Inconsolata", monospace;
+    font-size: 110%;
+    color: #1b262c;
+    
+    display: block;
+    width: 100%;
+    height: 40px;
+    
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 10px;
+    
+    box-sizing: border-box;
+    
+    border: 20px;
+    border-color: rgb(129, 120, 153);
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+}
+
+#login input::placeholder {
+    font-family: "Inconsolata", monospace;
+    color: #bda5a5;
+}
+
+#login button{
+    font-family: "Inconsolata", monospace;
+    font-size: 110%;
+    color:whitesmoke;
+    width: 100%;
+    height: 40px;
+    border: 20px;
+    
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    
+    background-color: rgb(129, 120, 153);
+    
+    margin-top: 10px;
+}
+#login button:hover {
+    background-color: #0a161f;
+    color:#d9e7f0;
+}
+
+.pie-form {
+    font-size: 90%;
+    text-align: center;    
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.pie-form a {
+    display: block;
+    text-decoration: none;
+    color: whitesmoke;
+    margin-bottom: 3px;
+}
+
+.pie-form a:hover {
+    color: black;
+}
+/******************************/
+/*ABOUT ME STYLE*/
+
+/* Contenedor principal */
+#aboutme-container {
+  display: flex;
+  flex-direction: column; /* Alinea el título arriba */
+  align-items: center; /* Centra horizontalmente el título */
+  margin: 20px auto; /* Centra todo el contenedor en la página */
+  padding: 20px;
+  width: 80%; /* Limita el ancho máximo del contenedor */
+}
+
+/* Título centrado */
+#aboutme-container h4 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px; /* Espaciado entre el título y el contenido */
+  font-size: 40px;
+  color: #000;
+}
+
+/* Contenedor de párrafo e imagen */
+#aboutme-content {
+  display: flex; /* Alinea el párrafo y la imagen en fila */
+  justify-content: center; /* Centra ambos elementos horizontalmente */
+  align-items: center; /* Alinea los elementos verticalmente */
+  gap: 20px; /* Espaciado entre el párrafo y la imagen */
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+}
+
+/* Cuadro para el texto */
+#aboutme-text {
+  flex: 1; /* Permite que el texto ocupe más espacio si es necesario */
+  max-width: 50%; /* Limita el ancho del texto */
+  padding: 20px; /* Espaciado interno para el cuadro */
+  border: 1px solid #ddd; /* Agrega un borde para parecer un cuadro */
+  border-radius: 10px; /* Bordes redondeados */
+  background-color: #f9f9f9; /* Color de fondo suave */
+}
+
+
+#aboutme-text p {
+  margin: 0; /* Elimina márgenes adicionales */
+  font-size: 18px;
+  color: black;
+  text-align: justify; /* Justifica el texto */
+  line-height: 1.6; /* Mejora la legibilidad */
+}
+
+
+#img-aboutme img {
+  flex: 0.5; /* La imagen ocupa menos espacio */
+  max-width: 250px; /* Tamaño máximo de la imagen */
+  height: auto; /* Mantiene proporción */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
+}
+
+
+
+/************************************/
+   /**ESTILOS PAGINA PRINCIPAL**/
+/************************************/
+
+#contenedor{
+    font-family: "Inconsolata", monospace;
+    color: black;
+    margin: 5px;
+    padding: 5px;
+    justify-content: center;
+}
+
+#contenedor h1,
+#contenedor h3
+{
+    margin: 10px;
+    margin-top: 5px;
+}
+
+#contenedor2,
+#contenedor3{
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    border: 0.5rem whitesmoke;
+    border-radius: 12px;
+    /**box-shadow:  0 0 2rem rgb(196, 173, 173);**/
+    
+}
+
+textarea{
+    background-color: #bda5a5;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 100px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 1%;
+}
+
+#contenedor2 button,
+#contenedor3 button{
+    font-family: "Inconsolata", monospace;
+    font-size: 110%;
+    color:whitesmoke;
+    width: 15%;
+    height: 40px;
+    border: 20px;
+    
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    
+    background-color: rgb(129, 120, 153);
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+#contenedor2 button:hover,
+#contenedor3 button:hover{
+    background-color: #000;
+    color: rgb(129, 120, 153);  
+}

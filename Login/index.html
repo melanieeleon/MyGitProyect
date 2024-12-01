@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!--BODY STYLE-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!--TITULO STYLE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <!--css path-->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!----------------------------------------------------------------->
+    <!----------------------------------------------------------------->
+                        <!--NAV BAR-->
+    <!----------------------------------------------------------------->
+    <!----------------------------------------------------------------->
+    <nav>
+        <div class="logo">
+          <img src="imagenes\snoopynavbar2.png" alt="snoopy logo" />
+          <h1>Snoopy Diary</h1>
+        </div>
+        <ul>
+          <li><a href="#home-container">Home</a></li>
+          <li><a href="#snoopy-container">Who is Snoopy?</a></li>
+          <li><a href="#login">Sing in</a></li>
+          <li><a href="#aboutme-container">About me</a></li>
+        </ul>
+
+        <div class="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+      </nav>
+      <div class="menubar">
+        <ul>
+          <li> <a href="#home-container">Home</a> </li>
+          <li> <a href="#snoopy-container">Who is Snoopy?</a> </li>
+          <li> <a href="#contenedor-principal">Sing in</a> </li>
+          <li> <a href="#aboutme-container">About me</a> </li>
+        </ul>
+      </div>
+    
+
+    <!----------------------------------------------------------------->
+    <!----------------------------------------------------------------->
+                        <!--Main Content-->
+    <!----------------------------------------------------------------->
+    <!----------------------------------------------------------------->
+    <div id="home-container">
+        <h1><b>Welcome to your Snoopy Diary!</b></h1>
+        <div class="content">
+            <div class="text">
+                <h4>You can do so many things in here:</h4>
+                <ul>
+                    <li>Write your ideas</li>
+                    <li>Write your thoughts</li>
+                    <li>Manifest your dream life!</li>
+                </ul>
+                <p><b>So many things you can write, feel freely here!!</b></p>
+            </div>
+            <!-- Imagen -->
+            <div id="img-container">
+                <img src="imagenes\snoopyhome.png" alt="snoopy saludando">
+            </div>
+        </div>
+    </div>
+
+    <div id="snoopy-container" >
+      <h2>Who is Snoopy?</h2>
+      <div class="snoopy-content">
+        <p>Snoopy is one of the main characters of the comic strip "Peanuts" created by Charles M. Schulz.<br>
+         <br>
+          He is one of the most iconic and beloved comic book characters in the world. <br></p>
+      </div>
+      <div id="img-container2">
+        <img src="">
+      </div>
+    </div>
+
+
+    <div id="contenedor-principal">
+        <div id="contenedor-centrado">
+          <p>Dont wait and start writting!</p> <br>
+            <img src="imagenes\imgLog.png" alt="un snoopy leyendo sentado en una alfombra morada ">
+            <div id="login"> 
+                <div class="titulo">Log in</div>
+                <form id="loginForm" action="pagprincipal.html">
+                    <input type="text" name="usuario" placeholder="enter your tu user" required>
+                    <input type="password" name="password" placeholder="enter your password" required>
+                    <button type="submit" title="Ingresar" name="Ingresar" >Sing in</button>
+                </form>
+            </div>
+            <div class="pie-form">
+                <a href="#">Forgot your password?</a>
+                <a href="createaccount.html">Not an user? Create an account!</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="aboutme-container">
+      <h4>About me!</h4>
+      <div id="aboutme-content">
+        <div id="aboutme-text">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> 
+             Ipsum ipsam optio tenetur laboriosam voluptas dolores perferendis,<br>
+             explicabo nobis similique distinctio eos perspiciatis amet neque vero dolorum qui ducimus minima deserunt!<br>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aliquid eaque expedita pariatur eos exercitationem <br>
+             consequuntur architecto, dignissimos, distinctio delectus accusantium! Eaque saepe ratione, nobis laudantium sequi ullam omnis commodi!
+          </p>
+        </div>
+        <div id="img-aboutme">
+          <img src="imagenes/snoopyhome.png" alt="yo">
+        </div>
+      </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

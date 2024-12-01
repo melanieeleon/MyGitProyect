@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+
+    <!--BODY STYLE-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!--TITULO STYLE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <!--css path-->
+    <link rel="stylesheet" href="account.css">
+</head>
+<body>
+    
+    <!----------------------------------------------------------------->
+    <!----------------------------------------------------------------->
+                        <!--Main content-->
+    <!----------------------------------------------------------------->
+    <!----------------------------------------------------------------->
+
+    <div id="contenedor-principal">
+        <div id="contenedor-centrado">
+          <img src="imagenes\imgLog.png" alt="un snoopy leyendo sentado en una alfombra morada ">
+          <p>Get started with your account!</p> <br>
+            <div id="login"> 
+                <div class="titulo">Log in</div>
+                <form id="loginForm" action="pagprincipal.html">
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="enter your email" required>
+
+                    <label for="usuario">User:</label>
+                    <input type="text" name="usuario" placeholder="enter your new user" required>
+                    
+                    <label for="password">Password:</label>
+                    <input id="password" type="password" name="password" placeholder="enter your new password" required autocomplete="off">
+                    <span id="passwordError" style="color: red; display: none;">
+                        The password should include 8 characters minimum, 
+                        one uppercase, one special character and one number.</span>
+                    
+                    <button type="submit" title="Sing in" name="Ingresar">Get Started!</button>
+                </form>
+            </div>
+        </div>
+    </div>
+ 
+    <script src="AccountScript.js"></script>
+</body>
+</html>
