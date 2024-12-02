@@ -481,6 +481,16 @@ textarea{
     padding: 5px;
     border-radius: 1%;
 }
+/*para modificar el date*/
+#contenedor2 p,
+#contenedor2 input{ 
+  margin-left: 15px;
+  display: flex;
+}
+
+#contenedor2 input{
+  flex: 1;
+}
 
 #contenedor2 button,
 #contenedor3 button{
