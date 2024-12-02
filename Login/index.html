@@ -98,7 +98,12 @@
                 <div class="titulo">Log in</div>
                 <form id="loginForm" action="pagprincipal.html">
                     <input type="text" name="usuario" placeholder="enter your tu user" required>
-                    <input type="password" name="password" placeholder="enter your password" required>
+
+                    <input id="password" type="password" name="password" placeholder="enter your password" required autocomplete="off">
+                    <span id="passwordError" style="color: red; display: none;">
+                      The password is incorrect, please
+                      try again.</span>
+
                     <button type="submit" title="Ingresar" name="Ingresar" >Sing in</button>
                 </form>
             </div>
@@ -126,6 +131,6 @@
       </div>
     </div>
     
-    <script src="script.js"></script>
+    <script src="indexScript.js"></script>
 </body>
 </html>
