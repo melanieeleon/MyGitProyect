@@ -427,7 +427,7 @@ body{
 
 #img-aboutme img {
   flex: 0.5; /* La imagen ocupa menos espacio */
-  max-width: 250px; /* Tamaño máximo de la imagen */
+  max-width: 350px; /* Tamaño máximo de la imagen */
   height: auto; /* Mantiene proporción */
   border-radius: 10px; /* Bordes redondeados */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
@@ -464,6 +464,8 @@ body{
     background-color: whitesmoke;
     border: 0.5rem whitesmoke;
     border-radius: 12px;
+    width: 450px;
+    
     /**box-shadow:  0 0 2rem rgb(196, 173, 173);**/
     
 }
@@ -473,7 +475,7 @@ textarea{
     color: black;
     justify-content: center;
     align-items: center;
-    width: 700px;
+    width: 400px;
     height: 100px;
     margin: 5px;
     padding: 5px;
@@ -497,6 +499,7 @@ textarea{
     
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: 10px;
     
 }
 #contenedor2 button:hover,
