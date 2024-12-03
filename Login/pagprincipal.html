@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
 
     <!--css path-->
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="mainpage.css">
 </head>
 <body>
     <!----------------------------------------------------------------->
@@ -72,29 +72,45 @@
     <!----------------------------------------------------------------->
 
     <div id="contenedor">
-        <div id="contenedor2">
-            <h1>Snoopy Diary!</h1>
-            <h3>How was your day today?</h3>
-            <p>Select the date:</p>
-            <input type="date">
-            <div id="contenedor-textarea">
-                <textarea name="diariotxt" id="diariotxt" placeholder="Start writting!"></textarea>
-                <button type="submit" title="Send" name="Send">Send</button>
+      
+      <!--Diario-->
+      <div id="contenedor2">
+        <h1>Snoopy Diary!</h1>
+        <h3>How was your day today?</h3>
+        <div class="date-container">
+          <p>Select the date:</p>
+          <input type="date">
+        </div>
+        <div id="contenedor-textarea">
+          <textarea name="diariotxt" id="diariotxt" placeholder="Start writting!"></textarea>
+          <button type="submit" title="Send" name="Send">Send</button>
+        </div>
+      </div>
+
+    
+      <!--Recordatorio-->
+      <div class="list roundBorder">
+        <div class="date">
+          <div class="dateRight">
+            <div id="dateNumber"></div>
+            <div>
+              <div id="dateMonth"></div>
+              <div id="dateYear"></div>
             </div>
           </div>
-          
-          <div id="contenedor3">
-            <h1>Snoopy To-do List!</h1>
-            <h3>Plan your day</h3>
-            <div id="contenedor-textarea">
-                <textarea name="diariotxt" id="diariotxt" placeholder="Start organizing!"></textarea>
-                <button type="submit" title="Send" name="Send">Send</button>
-            </div>
+          <div id="dateText"></div>
         </div>
+        <form onsubmit="addNewTask(event)" >
+          <input type="text" name="taskText" autocomplete="off" placeholder="New task" class="roundBorder">
+          <button type="submit" class="addTaskButton">+</button>
+          <button type="button" class="orderButton roundBorder" onclick="renderOrderedTasks()">Ordenar</button>
+        </form>
+        <div id="tasksContainer"></div>
+      </div>
     </div>
 
 
     
-      <script src="script.js"></script>
+      <script src="mainpageScript.js"></script>
 </body>
 </html>
