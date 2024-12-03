@@ -6,6 +6,7 @@
 html {
   scroll-behavior:smooth; /*para que el desplazamiento al contenido sea despacio*/
 }
+
 *{
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
@@ -266,7 +267,6 @@ body{
   margin-right: 40px; /* Espaciado entre texto e imagen */
   font-size: 25px;
 }
-
 /****************************************/
 
 /*LOGIN*/
@@ -344,6 +344,7 @@ body{
     width: 100%;
     height: 40px;
     border: 20px;
+    cursor: pointer;
     
     border-radius: 20px;
     -moz-border-radius: 20px;

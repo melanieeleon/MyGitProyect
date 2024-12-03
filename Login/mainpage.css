@@ -278,6 +278,9 @@ textarea{
     align-items: center;
     justify-content: space-between;
 }
+.date-container input{
+    cursor: pointer;
+}
 .dateRight {
     display: flex;
     align-items: center;
