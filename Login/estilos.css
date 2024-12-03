@@ -60,17 +60,17 @@ nav .logo h1 {
     border-radius: 5px;
   }
   
-  nav ul li a:hover {
+nav ul li a:hover {
     /*#f5f5f5*/
     color: black;
   }
   
-  .hamburger {
+.hamburger {
     display: none;
     cursor: pointer;
   }
   
-  .hamburger .line {
+.hamburger .line {
     width: 25px;
     height: 1px;
     background-color: #1f1f1f;
@@ -78,30 +78,30 @@ nav .logo h1 {
     margin: 7px auto;
     transition: all 0.3s ease-in-out;
   }
-  .hamburger-active {
+.hamburger-active {
     transition: all 0.3s ease-in-out;
     transition-delay: 0.6s;
     transform: rotate(45deg);
   }
   
-  .hamburger-active .line:nth-child(2) {
+.hamburger-active .line:nth-child(2) {
     width: 0px;
   }
   
-  .hamburger-active .line:nth-child(1),
-  .hamburger-active .line:nth-child(3) {
+.hamburger-active .line:nth-child(1),
+.hamburger-active .line:nth-child(3) {
     transition-delay: 0.3s;
   }
   
-  .hamburger-active .line:nth-child(1) {
+.hamburger-active .line:nth-child(1) {
     transform: translateY(12px);
   }
   
-  .hamburger-active .line:nth-child(3) {
+.hamburger-active .line:nth-child(3) {
     transform: translateY(-5px) rotate(90deg);
   }
   
-  .menubar {
+.menubar {
     position: absolute;
     top: 0;
     left: -60%;
@@ -115,20 +115,20 @@ nav .logo h1 {
     transition: all 0.5s ease-in;
     z-index: 2;
   }
-  .active {
+.active {
     left: 0;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
   
-  .menubar ul {
+.menubar ul {
     padding: 0;
     list-style: none;
   }
-  .menubar ul li {
+.menubar ul li {
     margin-bottom: 32px;
   }
   
-  .menubar ul li a {
+.menubar ul li a {
     text-decoration: none;
     color: #000;
     font-size: 95%;
@@ -137,7 +137,7 @@ nav .logo h1 {
     border-radius: 5px;
   }
   
-  .menubar ul li a:hover {
+.menubar ul li a:hover {
     background-color: #f5f5f5;
   }
   @media screen and (max-width: 790px) {
