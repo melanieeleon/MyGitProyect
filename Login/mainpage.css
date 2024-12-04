@@ -215,12 +215,15 @@ textarea{
     margin: 5px;
     padding: 5px;
     border-radius: 1%;
+    resize: none;
+    scrollbar-width: 3px;
+    scroll-behavior: smooth;
   }
   
 #contenedor2 .date-container {
-    display: flex; /* Activa el diseño en línea */
-    align-items: center; /* Alinea verticalmente */
-    gap: 10px; /* Espaciado entre los elementos */
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
   }
 #contenedor2 button{
     font-family: "Inconsolata", monospace;
@@ -230,7 +233,7 @@ textarea{
       height: 40px;
       border: 20px;
       cursor: pointer;
-      float: right;/*alinea el boton a la derecha*/
+      float: right;
       
       border-radius: 20px;
       -moz-border-radius: 20px;

@@ -2,28 +2,28 @@
 function sendDiary()
 {
     const textarea = document.getElementById("diariotxt");
-    const dateInput = document.getElementById(".date-container input[type='date']")
+    const dateInput = document.querySelector(".date-container input[type='date']")
     const confirmationMessage = document.getElementById("confirmationMessage");
 
-    // Validar si el textarea está vacío
+    //validar si el textarea está vacío
   if (!textarea.value.trim() || !dateInput.value) {
     alert("Please fill in both the date and your diary entry.");
     return;
   }
-  // Mostrar el mensaje de confirmación
+  //msj de confirmacion
   confirmationMessage.textContent = "Your diary entry has been sent successfully!";
   confirmationMessage.style.display = "block";
 
-  // Limpiar el contenido del textarea y la fecha después de enviar
+  
   textarea.value = "";
   dateInput.value = "";
 
-  // Ocultar el mensaje después de 3 segundos (opcional)
+  
   setTimeout(() => {
     confirmationMessage.style.display = "none";
   }, 3000);
 
-  }
+}
 
 
 // Info date/recordatorio
