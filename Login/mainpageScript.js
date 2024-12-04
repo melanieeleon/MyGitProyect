@@ -1,3 +1,22 @@
+ //info navbar
+
+const mobileNav = document.querySelector(".hamburger");
+const navbar = document.querySelector(".menubar");
+const menuItems = document.querySelectorAll(".menubar a");
+
+const toggleNav = () => {
+    navbar.classList.toggle("active");
+    mobileNav.classList.toggle("hamburger-active");
+  };
+  mobileNav.addEventListener("click", () => toggleNav());
+  menuItems.forEach(item => {
+    item.addEventListener("click", () => { /*selecciona un item y se cierra */
+      navbar.classList.remove("active");
+      mobileNav.classList.remove("hamburger-active");
+    });
+  });
+
+  
  //info diario
 function sendDiary()
 {
@@ -5,7 +24,7 @@ function sendDiary()
     const dateInput = document.querySelector(".date-container input[type='date']")
     const confirmationMessage = document.getElementById("confirmationMessage");
 
-    //validar si el textarea está vacío
+    
   if (!textarea.value.trim() || !dateInput.value) {
     alert("Please fill in both the date and your diary entry.");
     return;
@@ -48,21 +67,21 @@ const addNewTask = (event) => {
     const { value } = event.target.taskText;
     if (!value) return;
 
-    // Crear la tarea
+    
     const task = document.createElement('div');
     task.classList.add('task', 'roundBorder');
 
-    // Crear el texto de la tarea
+    
     const taskText = document.createElement('span');
     taskText.textContent = value;
 
-    // Crear el botón de eliminar
+    
     const deleteButton = document.createElement('button');
     deleteButton.textContent = 'Delete';
     deleteButton.classList.add('deleteButton');
     deleteButton.addEventListener('click', (event) => {
-        event.stopPropagation(); // Evita activar `changeTaskState`
-        deleteTask(task); // Pasa la tarea como argumento
+        event.stopPropagation(); 
+        deleteTask(task); 
     });
 
     // Agregar eventos y estructura
@@ -70,8 +89,8 @@ const addNewTask = (event) => {
     task.appendChild(taskText);
     task.appendChild(deleteButton);
 
-    tasksContainer.prepend(task); // Añadir al contenedor
-    event.target.reset(); // Limpiar el formulario
+    tasksContainer.prepend(task); 
+    event.target.reset(); // reset el formulario
 };
 
 const changeTaskState = (event) => {

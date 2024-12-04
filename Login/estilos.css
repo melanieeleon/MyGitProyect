@@ -115,6 +115,7 @@ nav ul li a:hover {
     background: rgba(255, 255, 255);
     transition: all 0.5s ease-in;
     z-index: 2;
+    
   }
 .active {
     left: 0;
@@ -400,10 +401,12 @@ body{
 /* Contenedor de párrafo e imagen */
 #aboutme-content {
   display: flex; /* Alinea el párrafo y la imagen en fila */
-  justify-content: center; /* Centra ambos elementos horizontalmente */
+  flex-wrap: wrap;
+  justify-content: space-between; 
   align-items: center; /* Alinea los elementos verticalmente */
   gap: 20px; /* Espaciado entre el párrafo y la imagen */
   width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+  margin: 0 auto;
 }
 
 /* Cuadro para el texto */
@@ -414,6 +417,7 @@ body{
   border: 1px solid #ddd; /* Agrega un borde para parecer un cuadro */
   border-radius: 10px; /* Bordes redondeados */
   background-color: #f9f9f9; /* Color de fondo suave */
+  line-height: 1.6;
 }
 
 
@@ -434,6 +438,37 @@ body{
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
 }
 
+/*ajustes para pantallas pequeñas aboutme container */
+@media screen and (max-width: 768px) {
+  #aboutme-content {
+      flex-direction: column; /* Cambia la disposición a columna */
+  }
+
+  #aboutme-text {
+      text-align: center; /* Centra el texto en pantallas pequeñas */
+      font-size: 18px; /* Reduce el tamaño de fuente */
+  }
+
+  #img-aboutme img {
+      max-width: 300px; /* Ajusta la imagen para pantallas pequeñas */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #aboutme-text {
+      font-size: 16px; /* Reduce más el tamaño en pantallas muy pequeñas */
+  }
+
+  #aboutme-container h4 {
+      font-size: 35px; /* Reduce el título en pantallas pequeñas */
+  }
+
+  #img-aboutme img {
+      max-width: 250px; /* Imagen más pequeña */
+  }
+}
+
+
 /*footer*/
 .footer {
   font-family:"Inconsolata", monospace ;
@@ -450,4 +485,51 @@ body{
 }
 .footer a:hover {
   color: white;
+}
+/**RESPONSIVE**/
+/*media queries*/
+
+@media screen and (max-width: 1024px) {
+  /* Para pantallas medianas */
+  nav ul {
+      display: none; /* Esconde el menú principal */
+  }
+  .hamburger {
+      display: block; /* Muestra el menú tipo hamburguesa */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Para tablets y móviles */
+  #home-container .content {
+      flex-direction: column; /* Apila texto e imagen */
+      text-align: center;
+  }
+  #home-container #img-container {
+      margin-top: 20px;
+  }
+
+  nav .logo img {
+      height: 60px; /* Reduce el tamaño del logo */
+      width: 60px;
+  }
+  nav ul li a {
+      font-size: 14px; /* Ajusta tamaño de texto en el menú */
+  }
+
+  #contenedor-principal {
+      flex-direction: column; /* Centra todo verticalmente */
+  }
+}
+/*TEXT*/
+
+@media screen and (max-width: 576px) {
+  #home-container h1 {
+      font-size: 40px; /* Reduce el título */
+  }
+
+  #home-container .text,
+  #home-container p {
+      font-size: 16px;
+  }
 }
