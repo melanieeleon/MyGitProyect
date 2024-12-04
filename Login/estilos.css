@@ -4,7 +4,7 @@
 /**NAV BAR**/
 
 html {
-  scroll-behavior:smooth; /*para que el desplazamiento al contenido sea despacio*/
+  scroll-behavior:smooth; 
 }
 
 *{
@@ -163,8 +163,6 @@ body{
       "wdth" 100;
     margin: 0;
     background-color: rgb(129, 120, 153);  
-    /*background: linear-gradient(80deg white,rgb(139, 82, 139), pink);
-    /*background: radial-gradient(center center, circle, black, rgb(129, 120, 153));*/
     color: #f5f5f5;
 }
 
@@ -182,33 +180,33 @@ body{
 }
             /**HOME**/
 #home-conteiner{
-    display: flex; /* Activa Flexbox */
-    flex-direction: column; /* Organiza los elementos en columna */
-    align-items: center; /* Centra horizontalmente el h1 */
-    margin: 20px auto; /* Centra el contenedor horizontalmente en la página */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    margin: 20px auto; 
     padding: 20px;   
 }
 
 #home-container h1{
-    text-align: center; /* Centra el texto del h1 */
-    margin-bottom: 40px; /* Espaciado hacia abajo */
+    text-align: center; 
+    margin-bottom: 40px; 
     font-size: 70px;
     color: #000;
 }
     
 #home-container .content {
-    display: flex; /* Activa Flexbox */
-    justify-content: space-between; /* Espaciado entre el texto y la imagen */
-    align-items: flex-start; /* Alinea los elementos verticalmente al inicio */
-    width: 80%; /* Ajusta el ancho del contenedor */
-    margin: 0 auto; /* Centra horizontalmente */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    width: 80%; 
+    margin: 0 auto; 
 }
 
 /**Sección izquierda: h4, ul, p */
 #home-container .text {
-    flex: 2; /* Hace que ocupe más espacio que la imagen */
-    text-align: center; /* Alinea el texto a la izquierda left */
-    margin-right: 20px; /* Espaciado entre texto e imagen */
+    flex: 2; 
+    text-align: center; 
+    margin-right: 20px; 
     font-size: 20px;
 }
 #home-container p{

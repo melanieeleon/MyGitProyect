@@ -8,8 +8,6 @@ body{
       "wdth" 100;
     margin: 0;
     background-color: whitesmoke;  
-    /*background: linear-gradient(80deg white,rgb(139, 82, 139), pink);
-    /*background: radial-gradient(center center, circle, black, rgb(129, 120, 153));*/
     color: black;
 }
 
@@ -28,7 +26,7 @@ body{
 
 #contenedor-centrado{
   align-items: center;
-  margin-top: 20px; /*agregado por mi */
+  margin-top: 20px; 
   max-width: 320px;
   width: 100%;
   margin-bottom: 20px;

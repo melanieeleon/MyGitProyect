@@ -10,7 +10,7 @@ const passwordError = document.getElementById('passwordError');
 
 /**
  * NAV BAR
- */
+ **/
 const toggleNav = () => {
   navbar.classList.toggle("active");
   mobileNav.classList.toggle("hamburger-active");
